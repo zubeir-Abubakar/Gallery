@@ -23,6 +23,7 @@ Written by *Zubeyr-Abubakar!*. My first attempt at using the django framework
 ## Technologies Used
 1. Python 3.6
 2. Django1.11
+3. visual studio code(VS)
 
 ## Behaviour Driven Development
 
