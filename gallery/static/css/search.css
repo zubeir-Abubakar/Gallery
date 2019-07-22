@@ -1,0 +1,14 @@
+
+img {
+	width: 100%;
+}
+.my_masonry {
+	columns: 250px;
+  column-gap: 20px;
+}
+.my_item {
+  margin-bottom: 1rem;
+}
+.spaceup{
+  margin-top: 10px;
+}

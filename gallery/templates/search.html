@@ -1,0 +1,61 @@
+<style>
+.container{
+  margin-left: 50px;
+  border-color: aqua;
+  background-image:url("https://www.artnet.com/gallery-network/assets/images/gallery-network/galleries/whitecube.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+{{ block.super }}
+<!--function which allows us to use any content that was defined inside a block in the parent template.-->
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="{% static 'css/search.css' %}">
+
+<!-- Masonry based layouts for aligning images: Pinterest -->
+
+
+  <div class="row">
+        <div class="container">
+
+  <div class="col-md-12">
+    <p class="spaceup"><b>{{message}}</b></p>
+  </div>
+
+  <div class="col-md-12">
+  <div class="my_masonry">
+    {% for image in all_images %}
+    <div class="my_item">
+
+    <a href="{{image.image_path.url}}" data-fancybox="images" data-caption="<h6>{{image.name}}</h6>  <p> {{image.description}}</p>   <p> Shot in- {{image.image_location}} </p>  
+                <button class='btn btn-outline-warning' onclick=copyLink('{{image.id}}_theurl_id')>Copy Image Link</button>">  
+                 <!--Image that's displayed on flexbox--> 
+
+    <img src="{{image.image_path.url}}" alt="{{image.name}}">   <!--Image that's displayed originally-->
+    </a> 
+    <input type="text" id="{{image.id}}_theurl_id" class="d-none form-control input-sm" value="https://zubeyr.gallery.com{{image.image_path.url}}">
+    </div>
+    {% endfor %}
+    </div>
+ 
+  </div>
+  </div>
+</div>
+
+<script>
+function copyLink(specificImageid){
+  var copyText = document.getElementById(specificImageid);      /* Get the text field */
+  copyText.select();     /* Select the text field */
+  document.execCommand("copy");     /* Copy the text inside the text field */
+  alert("The image link '" + copyText.value + "' can now be accessed");     /* Alert the copied text */
+}
+</script>
+
+
+{% endblock %}

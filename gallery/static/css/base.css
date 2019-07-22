@@ -1,0 +1,42 @@
+
+.centered {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+#txt{
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 120px;
+}
+.search-container {
+  display: block;
+  margin: 0 auto;
+}
+
+.searchTerm {
+  float: left;
+  width: 100%;
+  border: 3px solid rgb(192, 132, 2);
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+  color: rgb(73, 70, 70);
+}
+
+.space{
+  margin-top: 20px;
+}
+.image{
+  width: 100px;
+  height: 200px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+  .image img {
+    width: 100%;
+    background-attachment: fixed;
+
+}
