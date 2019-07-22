@@ -18,10 +18,10 @@ Written by *Zubeyr-Abubakar!*. My first attempt at using the django framework
 
 | Behavior our program should handle | Input description |  Output description
 | --- | --- | --- |
-| `Click on a photo` | None | Image is popped up showing it's details
-| `Enter image category` | Image Category |  Shows images of a given category
-| `Select different locations` | None |  Shows images of a given location
-| `Click 'CopyLink' button` | None |  Copies the link of your image to your clipboard
+| Click on a photo | None | Image is popped up showing it's details
+| Enter image category | Image Category |  Shows images of a given category
+| Select different locations | None |  Shows images of a given location
+| Click 'CopyLink' button | None |  Copies the link of your image to your clipboard
 
 
 ### Contact Information
