@@ -7,6 +7,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 </style>
 {% extends 'base.html' %}
 {% load static %}
@@ -34,7 +35,7 @@
     <div class="my_item">
 
     <a href="{{image.image_path.url}}" data-fancybox="images" data-caption="<h6>{{image.name}}</h6>  <p> {{image.description}}</p>   <p> Shot in- {{image.image_location}} </p>  
-                <button class='btn btn-outline-warning' onclick=copyLink('{{image.id}}_theurl_id')>Copy Image Link</button>">  
+                <button class='btn btn-outline-success'  onclick=copyLink('{{image.id}}_theurl_id')>Copy Image Link</button>">  
                  <!--Image that's displayed on flexbox--> 
 
     <img src="{{image.image_path.url}}" alt="{{image.name}}">   <!--Image that's displayed originally-->
