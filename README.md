@@ -1,4 +1,4 @@
-# Picha254
+# picbay
 
 This is a django application used to display photos shot from different locations under different categories
 
